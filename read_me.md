@@ -7,3 +7,6 @@ Genre: Sci-Fi, Action, Aliens
 Inspiration: Saint seiya
 
 Palette de couleurs:
+
+### Diagramme
+![diagramme](schema.png)
