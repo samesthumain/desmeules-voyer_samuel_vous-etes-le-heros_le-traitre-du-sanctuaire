@@ -1,0 +1,206 @@
+<mxfile host="65bd71144e">
+    <diagram id="e-8CFmKylmewfyXXPUCR" name="Page-1">
+        <mxGraphModel dx="1216" dy="792" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="#787878" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="6" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="2" target="3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="Javier arrive au sanctuaire." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Attaque directe" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="7" vertex="1" connectable="0">
+                    <mxGeometry x="-0.2" y="-2" relative="1" as="geometry">
+                        <mxPoint x="2" y="-2" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="3" target="5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Rafale" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="8" vertex="1" connectable="0">
+                    <mxGeometry x="0.22" relative="1" as="geometry">
+                        <mxPoint y="-21" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="&lt;font color=&quot;#ffffff&quot;&gt;Un chvalier l'attaque.&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="470" y="270" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontColor=#FCFCFC;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="4" target="2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="830" y="310" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="840" y="310"/>
+                            <mxPoint x="840" y="160"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="Le coups est bloqué." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+                    <mxGeometry x="670" y="280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#FCFCFC;" parent="1" source="5" target="17" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Vous avez battu l'autre chevalier de bronze." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="450" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-weight: bold; font-size: 11pt; font-family: Calibri, sans-serif; line-height: 18px; font-variant-ligatures: none !important;&quot; lang=&quot;EN-US&quot; class=&quot;TextRun SCXO33708353 BCX0&quot; data-contrast=&quot;auto&quot;&gt;Genre&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; font-family: Calibri, sans-serif; line-height: 18px; font-variant-ligatures: none !important;&quot; lang=&quot;EN-US&quot; class=&quot;TextRun SCXO33708353 BCX0&quot; data-contrast=&quot;auto&quot;&gt;: Fantaisie&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 18px; font-family: WordVisiCarriageReturn_MSFontService, Calibri, sans-serif;&quot; class=&quot;LineBreakBlob BlobObject DragDrop SCXO33708353 BCX0&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent;&quot; class=&quot;SCXO33708353 BCX0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;br style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent;&quot; class=&quot;SCXO33708353 BCX0&quot;&gt;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-weight: bold; font-size: 11pt; font-family: Calibri, sans-serif; line-height: 18px; font-variant-ligatures: none !important;&quot; lang=&quot;EN-US&quot; class=&quot;TextRun SCXO33708353 BCX0&quot; data-contrast=&quot;auto&quot;&gt;Inspiration&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; font-family: Calibri, sans-serif; line-height: 18px; font-variant-ligatures: none !important;&quot; lang=&quot;EN-US&quot; class=&quot;TextRun SCXO33708353 BCX0&quot; data-contrast=&quot;auto&quot;&gt;: Saint seiya&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 18px; font-family: WordVisiCarriageReturn_MSFontService, Calibri, sans-serif;&quot; class=&quot;LineBreakBlob BlobObject DragDrop SCXO33708353 BCX0&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent;&quot; class=&quot;SCXO33708353 BCX0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;br style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent;&quot; class=&quot;SCXO33708353 BCX0&quot;&gt;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-weight: bold; font-size: 11pt; font-family: Calibri, sans-serif; line-height: 18px; font-variant-ligatures: none !important;&quot; lang=&quot;EN-US&quot; class=&quot;TextRun SCXO33708353 BCX0&quot; data-contrast=&quot;auto&quot;&gt;Nom&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; font-family: Calibri, sans-serif; line-height: 18px; font-variant-ligatures: none !important;&quot; lang=&quot;EN-US&quot; class=&quot;TextRun SCXO33708353 BCX0&quot; data-contrast=&quot;auto&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 18px; font-family: Calibri, sans-serif;&quot; class=&quot;EOP SCXO33708353 BCX0&quot;&gt;&amp;nbsp;Les traitres du sanctuaire&lt;br&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="10" width="220" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="&lt;p style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; overflow-wrap: break-word; font-family: Calibri, sans-serif; font-size: 14.6667px; text-align: left; vertical-align: baseline; font-kerning: none;&quot; lang=&quot;FR-CA&quot; class=&quot;Paragraph SCXO118537316 BCX0&quot;&gt;&lt;font style=&quot;&quot; color=&quot;#fcfcfc&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-weight: bold; font-size: 11pt; line-height: 18px; font-variant-ligatures: none !important;&quot; lang=&quot;EN-US&quot; class=&quot;TextRun SCXO118537316 BCX0&quot; data-contrast=&quot;auto&quot;&gt;Palette&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 18px; font-variant-ligatures: none !important;&quot; lang=&quot;EN-US&quot; class=&quot;TextRun SCXO118537316 BCX0&quot; data-contrast=&quot;auto&quot;&gt;:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 18px;&quot; class=&quot;EOP SCXO118537316 BCX0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;ul style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; overflow: visible; cursor: text; font-family: verdana; font-size: 14.6667px; text-align: left;&quot; role=&quot;list&quot; class=&quot;BulletListStyle1 SCXO118537316 BCX0&quot;&gt;&lt;li style=&quot;margin: 0px 0px 0px 24px; padding-top: 0px; padding-bottom: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; overflow: visible; cursor: text; clear: both; position: relative; direction: ltr; display: block; font-size: 11pt; font-family: Calibri, sans-serif; vertical-align: baseline;&quot; class=&quot;OutlineElement Ltr SCXO118537316 BCX0&quot; data-aria-level=&quot;2&quot; role=&quot;listitem&quot; data-aria-posinset=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; overflow-wrap: break-word; vertical-align: baseline; font-kerning: none;&quot; lang=&quot;FR-CA&quot; class=&quot;Paragraph SCXO118537316 BCX0&quot;&gt;&lt;font color=&quot;#fcfcfc&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 18px; font-variant-ligatures: none !important;&quot; lang=&quot;EN-US&quot; class=&quot;TextRun SCXO118537316 BCX0&quot; data-contrast=&quot;auto&quot;&gt;Couleur de fond du site : #&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 18px;&quot; class=&quot;EOP SCXO118537316 BCX0&quot;&gt;&lt;span style=&quot;font-size: 14.6667px; font-variant-ligatures: none;&quot;&gt;214E34&lt;/span&gt;&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;margin: 0px 0px 0px 24px; padding-top: 0px; padding-bottom: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; overflow: visible; cursor: text; clear: both; position: relative; direction: ltr; display: block; font-size: 11pt; font-family: Calibri, sans-serif; vertical-align: baseline;&quot; class=&quot;OutlineElement Ltr SCXO118537316 BCX0&quot; data-aria-level=&quot;2&quot; role=&quot;listitem&quot; data-aria-posinset=&quot;2&quot;&gt;&lt;p style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; overflow-wrap: break-word; vertical-align: baseline; font-kerning: none;&quot; lang=&quot;FR-CA&quot; class=&quot;Paragraph SCXO118537316 BCX0&quot;&gt;&lt;font color=&quot;#fcfcfc&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 18px; font-variant-ligatures: none !important;&quot; lang=&quot;EN-US&quot; class=&quot;TextRun SCXO118537316 BCX0&quot; data-contrast=&quot;auto&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent;&quot; class=&quot;NormalTextRun SCXO118537316 BCX0&quot;&gt;Couleur de fond du&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-repeat: repeat-x; background-position: left bottom; background-image: url(&amp;quot;data:image/gif;base64,R0lGODlhBQAEAJECAP////8AAAAAAAAAACH5BAEAAAIALAAAAAAFAAQAAAIIlGAXCCHrTCgAOw==&amp;quot;); border-bottom: 1px solid transparent;&quot; class=&quot;SpellingError SCXO118537316 BCX0&quot;&gt;contenu&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent;&quot; class=&quot;NormalTextRun SCXO118537316 BCX0&quot;&gt;&amp;nbsp;:&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 18px;&quot; class=&quot;EOP SCXO118537316 BCX0&quot;&gt;&lt;span style=&quot;font-size: 14.6667px; font-variant-ligatures: none;&quot;&gt;#&lt;/span&gt;&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;color: rgb(252, 252, 252); font-size: 14.6667px; font-variant-ligatures: none; background-color: initial;&quot;&gt;86A397&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;margin: 0px 0px 0px 24px; padding-top: 0px; padding-bottom: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; overflow: visible; cursor: text; clear: both; position: relative; direction: ltr; display: block; font-size: 11pt; font-family: Calibri, sans-serif; vertical-align: baseline;&quot; class=&quot;OutlineElement Ltr SCXO118537316 BCX0&quot; data-aria-level=&quot;2&quot; role=&quot;listitem&quot; data-aria-posinset=&quot;3&quot;&gt;&lt;p style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; overflow-wrap: break-word; vertical-align: baseline; font-kerning: none;&quot; lang=&quot;FR-CA&quot; class=&quot;Paragraph SCXO118537316 BCX0&quot;&gt;&lt;font color=&quot;#fcfcfc&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 18px; font-variant-ligatures: none !important;&quot; lang=&quot;EN-US&quot; class=&quot;TextRun SCXO118537316 BCX0&quot; data-contrast=&quot;auto&quot;&gt;Couleur de la police : #000000&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 18px;&quot; class=&quot;EOP SCXO118537316 BCX0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;margin: 0px 0px 0px 24px; padding-top: 0px; padding-bottom: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; overflow: visible; cursor: text; clear: both; position: relative; direction: ltr; display: block; font-size: 11pt; font-family: Calibri, sans-serif; vertical-align: baseline;&quot; class=&quot;OutlineElement Ltr SCXO118537316 BCX0&quot; data-aria-level=&quot;2&quot; role=&quot;listitem&quot; data-aria-posinset=&quot;4&quot;&gt;&lt;p style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; overflow-wrap: break-word; vertical-align: baseline; font-kerning: none;&quot; lang=&quot;FR-CA&quot; class=&quot;Paragraph SCXO118537316 BCX0&quot;&gt;&lt;font color=&quot;#fcfcfc&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 18px; font-variant-ligatures: none !important;&quot; lang=&quot;EN-US&quot; class=&quot;TextRun SCXO118537316 BCX0&quot; data-contrast=&quot;auto&quot;&gt;Couleur de fond des boutons : #&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;background-color: initial; color: rgb(252, 252, 252); font-size: 14.6667px; font-variant-ligatures: none;&quot;&gt;214E34&lt;/span&gt;&lt;span style=&quot;background-color: initial; color: rgb(252, 252, 252); font-size: 14.6667px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;margin: 0px 0px 0px 24px; padding-top: 0px; padding-bottom: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; overflow: visible; cursor: text; clear: both; position: relative; direction: ltr; display: block; font-size: 11pt; font-family: Calibri, sans-serif; vertical-align: baseline;&quot; class=&quot;OutlineElement Ltr SCXO118537316 BCX0&quot; data-aria-level=&quot;2&quot; role=&quot;listitem&quot; data-aria-posinset=&quot;5&quot;&gt;&lt;p style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; overflow-wrap: break-word; vertical-align: baseline; font-kerning: none;&quot; lang=&quot;FR-CA&quot; class=&quot;Paragraph SCXO118537316 BCX0&quot;&gt;&lt;font color=&quot;#fcfcfc&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 18px; font-variant-ligatures: none !important;&quot; lang=&quot;EN-US&quot; class=&quot;TextRun SCXO118537316 BCX0&quot; data-contrast=&quot;auto&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent;&quot; class=&quot;NormalTextRun SCXO118537316 BCX0&quot;&gt;Couleur de fond des boutons&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-repeat: repeat-x; background-position: left bottom; background-image: url(&amp;quot;data:image/gif;base64,R0lGODlhBQAEAJECAP////8AAAAAAAAAACH5BAEAAAIALAAAAAAFAAQAAAIIlGAXCCHrTCgAOw==&amp;quot;); border-bottom: 1px solid transparent;&quot; class=&quot;SpellingError SCXO118537316 BCX0&quot;&gt;en&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent;&quot; class=&quot;NormalTextRun SCXO118537316 BCX0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-style: italic; font-size: 11pt; line-height: 18px; font-variant-ligatures: none !important;&quot; lang=&quot;EN-US&quot; class=&quot;TextRun SCXO118537316 BCX0&quot; data-contrast=&quot;auto&quot;&gt;hover&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 18px; font-variant-ligatures: none !important;&quot; lang=&quot;EN-US&quot; class=&quot;TextRun SCXO118537316 BCX0&quot; data-contrast=&quot;auto&quot;&gt;: #880044&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 18px;&quot; class=&quot;EOP SCXO118537316 BCX0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;margin: 0px 0px 0px 24px; padding-top: 0px; padding-bottom: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; overflow: visible; cursor: text; clear: both; position: relative; direction: ltr; display: block; font-size: 11pt; font-family: Calibri, sans-serif; vertical-align: baseline;&quot; class=&quot;OutlineElement Ltr SCXO118537316 BCX0&quot; data-aria-level=&quot;2&quot; role=&quot;listitem&quot; data-aria-posinset=&quot;6&quot;&gt;&lt;p style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; overflow-wrap: break-word; vertical-align: baseline; font-kerning: none;&quot; lang=&quot;FR-CA&quot; class=&quot;Paragraph SCXO118537316 BCX0&quot;&gt;&lt;font color=&quot;#fcfcfc&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 18px; font-variant-ligatures: none !important;&quot; lang=&quot;EN-US&quot; class=&quot;TextRun SCXO118537316 BCX0&quot; data-contrast=&quot;auto&quot;&gt;Couleur de la police des boutons : #000000&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 18px;&quot; class=&quot;EOP SCXO118537316 BCX0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;margin: 0px 0px 0px 24px; padding-top: 0px; padding-bottom: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; overflow: visible; cursor: text; clear: both; position: relative; direction: ltr; display: block; font-size: 11pt; font-family: Calibri, sans-serif; vertical-align: baseline;&quot; class=&quot;OutlineElement Ltr SCXO118537316 BCX0&quot; data-aria-level=&quot;2&quot; role=&quot;listitem&quot; data-aria-posinset=&quot;7&quot;&gt;&lt;p style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; overflow-wrap: break-word; vertical-align: baseline; font-kerning: none;&quot; lang=&quot;FR-CA&quot; class=&quot;Paragraph SCXO118537316 BCX0&quot;&gt;&lt;font style=&quot;&quot; color=&quot;#fcfcfc&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 18px; font-variant-ligatures: none !important;&quot; lang=&quot;EN-US&quot; class=&quot;TextRun SCXO118537316 BCX0&quot; data-contrast=&quot;auto&quot;&gt;Couleur de la police des boutons&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 18px; font-variant-ligatures: none !important;&quot; lang=&quot;EN-US&quot; class=&quot;TextRun SCXO118537316 BCX0&quot; data-contrast=&quot;auto&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; background-repeat: repeat-x; background-position: left bottom; background-image: url(&amp;quot;data:image/gif;base64,R0lGODlhBQAEAJECAP////8AAAAAAAAAACH5BAEAAAIALAAAAAAFAAQAAAIIlGAXCCHrTCgAOw==&amp;quot;); border-bottom: 1px solid transparent;&quot; class=&quot;SpellingError SCXO118537316 BCX0&quot;&gt;en&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent;&quot; class=&quot;NormalTextRun SCXO118537316 BCX0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-style: italic; font-size: 11pt; line-height: 18px; font-variant-ligatures: none !important;&quot; lang=&quot;EN-US&quot; class=&quot;TextRun SCXO118537316 BCX0&quot; data-contrast=&quot;auto&quot;&gt;hover&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 18px; font-variant-ligatures: none !important;&quot; lang=&quot;EN-US&quot; class=&quot;TextRun SCXO118537316 BCX0&quot; data-contrast=&quot;auto&quot;&gt;: #ffffff&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;background-color: transparent; color: windowtext; margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; font-size: 11pt; line-height: 18px;&quot; class=&quot;EOP SCXO118537316 BCX0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry y="60" width="340" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#FCFCFC;" parent="1" source="17" target="19" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Une chevalier d'argent demende de l'aide." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="600" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FCFCFC;" parent="1" source="19" target="20" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#FCFCFC;" parent="1" source="19" target="24" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FCFCFC;" parent="1" source="19" target="58" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="340" y="780" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="&lt;font color=&quot;#ffffff&quot;&gt;Aider le chevalier d'argent?&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="470" y="740" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontColor=#FCFCFC;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="20" target="2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="840" y="330" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="840" y="780"/>
+                            <mxPoint x="840" y="160"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" value="Le chevalier d'or tue Javier." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+                    <mxGeometry x="670" y="750" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="l'attaquer" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="610" y="782" as="geometry">
+                        <mxPoint x="-10" y="-4" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="34" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#FCFCFC;" parent="1" source="24" target="33" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="Vous battez le chevalier d'or à deux." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="920" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="l'aider" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="520" y="880" as="geometry">
+                        <mxPoint x="-10" y="-4" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="32" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FCFCFC;fillColor=#f9f7ed;strokeColor=#fafafa;" parent="1" source="48" target="2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="70" y="240"/>
+                            <mxPoint x="360" y="240"/>
+                            <mxPoint x="360" y="160"/>
+                        </Array>
+                        <mxPoint x="280" y="750" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="49" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="51" target="48" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="220" y="780" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="31" value="attendre" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="420" y="782" as="geometry">
+                        <mxPoint x="-10" y="-4" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="36" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#FCFCFC;" parent="1" source="33" target="35" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="Le vrai traitre apparait." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="1040" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#FCFCFC;startArrow=none;" parent="1" source="39" target="37" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FCFCFC;" parent="1" source="35" target="43" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="&lt;font color=&quot;#ffffff&quot;&gt;Vous êtes mort.&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="470" y="1160" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#FCFCFC;" parent="1" source="37" target="41" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Si vous l'avez aidé plus tôt, l'autre chevalier obtient votre énergie, il bat le traitre.&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="1320" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#FCFCFC;endArrow=none;" parent="1" source="35" target="39" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="510" y="1240" as="sourcePoint"/>
+                        <mxPoint x="510" y="1320" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="39" value="refuser" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FCFCFC;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="1260" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="fin" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="1440" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FCFCFC;fillColor=#f9f7ed;strokeColor=#f7f7f8;" parent="1" source="43" target="2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="840" y="1200"/>
+                            <mxPoint x="840" y="160"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="43" value="Une mort digne d'un chevalier." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+                    <mxGeometry x="670" y="1170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="&lt;span style=&quot;background-color: rgb(24, 20, 29);&quot;&gt;accepter la mort&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FCFCFC;" parent="1" vertex="1">
+                    <mxGeometry x="550" y="1185" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="Le chevalier d'or tue Javier." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="920" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="Rafale" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="190" y="950" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="51" target="52" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;Comment riposter&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="910" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="52" target="33" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="280" y="1150" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="52" value="Vous battez le chevalier d'or seul." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
+                    <mxGeometry x="230" y="1040" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="Attaque directe" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="290" y="1010" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="58" target="51" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="610" y="720" as="sourcePoint"/>
+                        <mxPoint x="660" y="670" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="58" value="&lt;span style=&quot;color: rgb(240, 240, 240);&quot;&gt;Le chevalier d'or vous attaque&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+                    <mxGeometry x="230" y="750" width="120" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
