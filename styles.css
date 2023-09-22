@@ -1,5 +1,5 @@
 @font-face{
-    src: url("/fonts/mount_olympus.otf") format("opentype");
+    src: url("/assets/mount_olympus.otf") format("opentype");
     font-family: "olympus";
 }
 
@@ -52,7 +52,7 @@ body{
     height: 100%;
     min-width: 300px;
     width: 90%;
-    background-image: url(/images/sanctuaire.jfif);
+    background-image: url(/assets/sanctuaire.jfif);
     background-repeat: no-repeat;
     background-size: 90%, 100%;
     overflow: hidden;
