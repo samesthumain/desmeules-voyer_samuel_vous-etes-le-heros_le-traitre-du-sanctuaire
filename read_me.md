@@ -1,12 +1,12 @@
 # Le traitre du sanctuaire
 
-Développement web - Projet vous êtes le héro
+[Développement web - Projet vous êtes le héro](index.html)
 
-Genre: Sci-Fi, Action, Aliens
+**Genre**: Sci-Fi, Action, Aliens
 
-Inspiration: Saint seiya
+**Inspiration**: Saint seiya
 
-Palette de couleurs:
+**Palette de couleurs**: [coolors.co](insert here)
 
 ### Diagramme
 ![diagramme](schema.png)
