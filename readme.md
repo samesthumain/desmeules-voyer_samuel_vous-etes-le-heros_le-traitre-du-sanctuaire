@@ -6,7 +6,7 @@
 
 **Inspiration**: Saint seiya
 
-**Palette de couleurs**: [coolors.co](insert here)
+**Palette de couleurs**: [coolors.co](https://coolors.co/ef6f6c-880044-214e34-86a397-361d2e)
 
 ### Diagramme
 ![diagramme](assets/images/schema.png)
