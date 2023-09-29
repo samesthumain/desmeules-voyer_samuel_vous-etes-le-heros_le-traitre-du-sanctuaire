@@ -1,7 +1,7 @@
 let chapters = {
     debut: {
         titre: "Arrivée au sanctuaire",
-        description: "Javier, chevalier de bronze au service du sanctuaire d'Athéna, a recu une lettre provenant dudis sanctuaire lui informant qu'il y a un traitre chez les chevaliers. Il décide donc de rentrer pour offrir son aide.",
+        description: "Javier, chevalier de bronze au service du sanctuaire d'Athéna, a recu une lettre provenant dudis sanctuaire lui informant qu'il y a un traitre chez les chevaliers et que son influence se répend à travers le sanctuaire. Il décide donc de rentrer pour offrir son aide.",
         image:"assets",
         boutons: [],
     },
@@ -51,7 +51,7 @@ let chapters = {
         boutons:[],
     },
 
-    //passage sans twist début
+    //route sans allié
     attendre: {
         titre: "Réaction tardive",
         description: "Ne voulant pas prendre de décision hâtive, Javier attends un peu avant d'attaquer sans raison. Une décision qu'il regrette amèrement lorsqu'il voit le chavalier d'or réduire celui qui le fuiait en poussières avant de se tourner vers Javier, un sourire moqueur sur le visage.",
@@ -60,7 +60,7 @@ let chapters = {
     },
 
     riposte: {
-        titre: "combat perdu d'avance",
+        titre: "Combat perdu d'avance",
         description: "«T'es un peu lent, toi.» Dis le chevalier d'or en s'aprochant. Javier n'as plus le temps d'hésiter le chevalier d'or n'est clairement pas de son côté mais que peut-il faire contre le plus puissant chevalier du sanctuaire?",
         image:"",
         boutons:[],
@@ -74,11 +74,24 @@ let chapters = {
         boutons:[],
     },
 
-    //passage sans twist fin
+    directe: {
+        titre: "Précis",
+        description: "Prennant avantage du fait que le chevalier d'or ne le prends clairement pas au sérieux, Javier se jette dans la gueule du loup à la vitesse de l'éclair et frappe le chevalier d'or dans le ventre de toutes ses forces. Le chevalier d'or est déstabilisé, ce qui laisse assez de temps à Javier pour porter un coup dévastateur à la gorge de son adversaire, le mettant hors d'état de nuire. <br> «Tu as battu mon chevalier d'or à toi tous seul, impressionant...»",
+        image:"",
+        boutons:[],
+    },
+    //route sans allié fin
+    //route avec allié
+    aide: {
+        titre: "Deux contre un",
+        description: "Ensemble, Javier et l'autre chevalier de bronze qui se présente sous le nom de Lancelot combattent le chevalier d'or et, à ensemble, ils arrivent à défaire leur puissant ennemi. Lancelot explique ensuite la raison pour laquelle le chevalier d'or le chassait: il a découvert l'identité du traitre original et que le chevalier d'or avait rejoint sa cause. <br> «Dis donc, tu est drôlement bien renseigné, toi...»",
+        image:"",
+        boutons:[],
+    },
 
     traitre: {
-        titre: "Ensemble, Javier et l'autre chevalier de bronze qui se présente sous le nom de Lancelot ont réussit à battre un chevalier d'or. Lancelot explique ensuite la raison pour laquelle le chevalier d'or le chassait: il a découvert l'identité du traitre original et que le chevalier d'or avait rejoint sa cause",
-        description: "",
+        titre: "Une mort abrupte",
+        description: "Javier se retourne et arrive à peine à entrevoir la silouette du chef de la garde personelle d'Athéna avant d'être anéanti par ce dernier",
         image:"",
         boutons:[],
     },
