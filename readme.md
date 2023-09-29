@@ -9,4 +9,4 @@
 **Palette de couleurs**: [coolors.co](insert here)
 
 ### Diagramme
-![diagramme](assets/schema.png)
+![diagramme](assets/images/schema.png)
