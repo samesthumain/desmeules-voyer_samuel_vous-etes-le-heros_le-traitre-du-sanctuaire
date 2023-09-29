@@ -166,9 +166,19 @@ const chapters = {
     }
 };
 
+/*let jeu = document.querySelector("#jeu");
+let titreRempace = document.querySelector("#chapitre");
+let description = document.querySelector("#para");*/
+
 function goToChapter(chapter) {
+    //pre dom
+    let jeu = document.querySelector("#jeu");
+    let titreRemplace = document.querySelector("#chapitre");
+    //post dom
+    let nouveauTitre = document.createTextNode(chapters[chapter].titre);
     if(chapters.hasOwnProperty(chapter)){
-        console.log("Titre: ", chapters[chapter].titre);
+        //console.log("Titre: ", chapters[chapter].titre);
+        jeu.replaceChild(nouveauTitre, titreRemplace);
         console.log("description: ", chapters[chapter].description);
 
         for(i=0; i<=chapters[chapter].boutons.length-1; i++){
