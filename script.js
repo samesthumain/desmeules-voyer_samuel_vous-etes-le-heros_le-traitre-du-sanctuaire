@@ -168,23 +168,31 @@ const chapters = {
 
 /*let jeu = document.querySelector("#jeu");
 let titreRempace = document.querySelector("#chapitre");
-let description = document.querySelector("#para");*/
+let descriptionRemplace = document.querySelector("#para");*/
 
 function goToChapter(chapter) {
-    //pre dom
-    let jeu = document.querySelector("#jeu");
-    let titreRemplace = document.querySelector("#chapitre");
-    //post dom
-    let nouveauTitre = document.createTextNode(chapters[chapter].titre);
     if(chapters.hasOwnProperty(chapter)){
+    //pre dom
+    //let jeu = document.querySelector("#jeu");
+    let titreRemplace = document.querySelector("#chapitre");
+    let descriptionRemplace = document.querySelector("#para");
+    let imageRemplace = document.querySelector("#image")
+    //post dom
+    titreRemplace.textContent = chapters[chapter].titre;
+    //let nouveauTitre = document.createTextNode(chapters[chapter].titre);
+    descriptionRemplace.textContent = chapters[chapter].description;
+    //let nouvelleDescription = document.createTextNode(chapters[chapter].description);
+    //-->imageRemplace.textContent = chapters[chapter].image;<-- presque là
+    
         //console.log("Titre: ", chapters[chapter].titre);
-        jeu.replaceChild(nouveauTitre, titreRemplace);
-        console.log("description: ", chapters[chapter].description);
+        //jeu.replaceChild(nouveauTitre, titreRemplace);
+        //console.log("description: ", chapters[chapter].description);
+        //jeu.replaceChild(nouvelleDescription, descriptionRemplace);
 
         for(i=0; i<=chapters[chapter].boutons.length-1; i++){
         console.log(`Pour choisir l'option: "${chapters[chapter].boutons[i].titre}" écrivez: goToChapter("${chapters[chapter].boutons[i].destination}")`);
+        }
     }
-}
     else{
         console.log("Cette clé de chapitre n'existe pas.")
     }
