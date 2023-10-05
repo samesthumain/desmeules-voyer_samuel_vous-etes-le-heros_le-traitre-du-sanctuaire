@@ -183,7 +183,9 @@ function goToChapter(chapter) {
     descriptionRemplace.textContent = chapters[chapter].description;
     //let nouvelleDescription = document.createTextNode(chapters[chapter].description);
     //-->imageRemplace.textContent = chapters[chapter].image;<-- presque là
-    
+    //debugger
+    imageRemplace.innerHTML = `<a href="${chapters[chapter].image}"><a>`;
+    //imageRemplace.className = chapter;
         //console.log("Titre: ", chapters[chapter].titre);
         //jeu.replaceChild(nouveauTitre, titreRemplace);
         //console.log("description: ", chapters[chapter].description);

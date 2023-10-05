@@ -51,10 +51,14 @@ body{
     height: 100%;
     min-width: 300px;
     width: 90%;
-    background-image: url(/assets/images/sanctuaire.jfif);
+    /*background-image: url(/assets/images/sanctuaire.jfif);*/
     background-repeat: no-repeat;
     background-size: 90%, 100%;
     overflow: hidden;
+}
+
+.debut{
+    background-image: url(/assets/images/sanctuaire.jfif);
 }
 
 #option{
