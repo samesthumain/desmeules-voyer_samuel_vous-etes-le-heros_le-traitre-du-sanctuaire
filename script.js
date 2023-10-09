@@ -176,7 +176,8 @@ function goToChapter(chapter) {
     //let jeu = document.querySelector("#jeu");
     let titreRemplace = document.querySelector("#chapitre");
     let descriptionRemplace = document.querySelector("#para");
-    let imageRemplace = document.querySelector("#image")
+    let imageRemplace = document.querySelector("#image");
+    let bouton1Remplace = document.querySelector("#button1");
     //post dom
     titreRemplace.textContent = chapters[chapter].titre;
     //let nouveauTitre = document.createTextNode(chapters[chapter].titre);
@@ -186,18 +187,25 @@ function goToChapter(chapter) {
     //debugger
     imageRemplace.innerHTML = `<a href="${chapters[chapter].image}"><a>`;
     //imageRemplace.className = chapter;
+    //debugger
+    bouton1Remplace.textContent = chapters[chapter].boutons[0].titre;
+
+    if (chapters[chapter].boutons[1]){
+        
+    }
         //console.log("Titre: ", chapters[chapter].titre);
         //jeu.replaceChild(nouveauTitre, titreRemplace);
         //console.log("description: ", chapters[chapter].description);
         //jeu.replaceChild(nouvelleDescription, descriptionRemplace);
 
-        for(i=0; i<=chapters[chapter].boutons.length-1; i++){
+        /*for(i=0; i<=chapters[chapter].boutons.length-1; i++){
         console.log(`Pour choisir l'option: "${chapters[chapter].boutons[i].titre}" écrivez: goToChapter("${chapters[chapter].boutons[i].destination}")`);
         }
-    }
+    
     else{
         console.log("Cette clé de chapitre n'existe pas.")
-    }
+    }*/
+}
 }
 
 goToChapter("debut");
