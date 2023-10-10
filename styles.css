@@ -3,6 +3,10 @@
     font-family: "olympus";
 }
 
+*{
+    margin: 0%;
+}
+
 body{
     display: flex;
     justify-content: center;
@@ -45,12 +49,13 @@ body{
 }
 
 #image{
-    margin-left: 50%;
-    margin-right: 40%;
-    min-height: 168px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*min-height: 168px;*/
     height: 100%;
-    min-width: 300px;
-    width: 90%;
+    /*min-width: 300px;*/
+    width: 100%;
     /*background-image: url(/assets/images/sanctuaire.jfif);*/
     background-repeat: no-repeat;
     background-size: 90%, 100%;
@@ -76,13 +81,13 @@ body{
   background-color: #214e34;
   border-radius: 8px;
   border-style: none;
-  box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+  /*box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;*/
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
   display: inline-block;
   font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
-  font-size: 16px;
+  font-size: 80%;
   font-weight: 600;
   letter-spacing: normal;
   line-height: 1.5;
@@ -116,7 +121,8 @@ body{
   opacity: 1;
   transform: translateY(0);
   transition-duration: .35s;
-  box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+    border: 1px solid #000;
+  /*box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;*/
   color: #000;
 
 

@@ -2,7 +2,7 @@ const chapters = {
     debut : {
         titre: "Arrivée au sanctuaire",
         description: "Javier, membre de l'ordre des chevalier de bronze qui se battent au service du sanctuaire d'Athéna à l'aide de l'énergie divine de la Déesse, a recu une lettre provenant dudis sanctuaire lui informant qu'il y a un traitre chez les chevaliers et que son influence se répend à travers le sanctuaire. Il décide donc de rentrer pour offrir son aide.",
-        image:"./assets/images/sanctuaire.jfif",
+        image:"/assets/images/sanctuaire.jfif",
         boutons: [
             {titre: 'Allons-y!', destination: 'ambuscade'}
         ]
@@ -118,7 +118,7 @@ const chapters = {
     },
     //route avec allié fin
 
-    meutre : {
+    meurtre : {
         titre: "Une mort abrupte",
         description: "Javier se retourne, ayant à peine le temps d'entrevoir la silouette du chef de la garde raprochée d'Athéna avant d'être anéanti par ce dernier.",
         image:"./assets/images/meurtre.jpeg",
@@ -177,9 +177,9 @@ function goToChapter(chapter) {
     let titreRemplace = document.querySelector("#chapitre");
     let descriptionRemplace = document.querySelector("#para");
     let imageRemplace = document.querySelector("#image");
-    let bouton1Remplace = document.querySelector("#button1");
+    /*let bouton1Remplace = document.querySelector("#button1");
     let bouton2Remplace = document.querySelector("#button2");
-    let bouton3Remplace = document.querySelector("#button3");
+    let bouton3Remplace = document.querySelector("#button3");*/
     //post dom
     titreRemplace.textContent = chapters[chapter].titre;
     //let nouveauTitre = document.createTextNode(chapters[chapter].titre);
@@ -187,12 +187,13 @@ function goToChapter(chapter) {
     //let nouvelleDescription = document.createTextNode(chapters[chapter].description);
     //-->imageRemplace.textContent = chapters[chapter].image;<-- presque là
     //debugger
-    imageRemplace.innerHTML = `<a href="${chapters[chapter].image}"><a>`;
+    imageRemplace.innerHTML = `<img src="${chapters[chapter].image}">`;
     //imageRemplace.className = chapter;
     //debugger
     //bouton1Remplace.textContent = chapters[chapter].boutons[0].titre;
 
 
+    //Code de la section "coups de pouce pour les boutons!" dans le wiki
 
     // Sélectionne le div .boutons 
     const boutons = document.querySelector('#option'); 
@@ -203,9 +204,10 @@ function goToChapter(chapter) {
     // Pour chaque boutons ... 
     for (let i = 0; i < chapters[chapter].boutons.length; i++) { 
     // on crée un nouveau bouton 
-    const nouveauBtn = document.createElement('button'); 
+    const nouveauBtn = document.createElement('button');
+    nouveauBtn.classList.add("opt");
     // on applique un libellé au bouton 
-    nouveauBtn.textContent = chapitre.boutons[i].titre; 
+    nouveauBtn.textContent = chapters[chapter].boutons[i].titre; 
     // on appele goToChapter lorsqu'on clique le bouton 
     nouveauBtn.addEventListener('click', () => { 
     // la destination, c'est la destination du bouton! 
