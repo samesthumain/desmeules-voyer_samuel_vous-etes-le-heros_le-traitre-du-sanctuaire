@@ -132,7 +132,7 @@ const chapters = {
         description: "La garde raprochée d'Athéna, les hommes et femmes en qui Athéna à entièrement confience. Des anciens chevaliers qui sont suposés de n'avoir qu'une chose en commun: une loyauté sans faille envers la Déesse. Finalement, l'homme le plus proche de la déesse sera celui qui causera sa perte.",
         image:"./assets/images/traitre.jpg",
         boutons:[
-            {titre: "C'est fini", destination: 'mort'},
+            {titre: "C'est fini...", destination: 'mort'},
             {titre: '«Non!»', destination: 'twist'}
         ]
     },
@@ -166,6 +166,7 @@ const chapters = {
     }
 };
 
+let twist = false;
 /*let jeu = document.querySelector("#jeu");
 let titreRempace = document.querySelector("#chapitre");
 let descriptionRemplace = document.querySelector("#para");*/
@@ -205,19 +206,127 @@ function goToChapter(chapter) {
     for (let i = 0; i < chapters[chapter].boutons.length; i++) { 
     // on crée un nouveau bouton 
     const nouveauBtn = document.createElement('button');
-    nouveauBtn.classList.add("opt");
+    nouveauBtn.classList.add(`opt`);
+    //nouveauBtn.classList.add(`big${i}`);
+    //debugger
     // on applique un libellé au bouton 
     nouveauBtn.textContent = chapters[chapter].boutons[i].titre; 
     // on appele goToChapter lorsqu'on clique le bouton 
     nouveauBtn.addEventListener('click', () => { 
     // la destination, c'est la destination du bouton! 
     goToChapter(chapters[chapter].boutons[i].destination)
+    
     });
     // enfin, on ajoute le bouton dans la page Web (dans le DOM) 
     boutons.appendChild(nouveauBtn); 
+
+    if(chapter === "debut" && twist == true){
+        twist = false;
+        //console.log("restart");
+        /*let logo = document.querySelector("#logo");
+        logo.classList.add("none");*/
+    }
+
+    if (chapter === "aide"){
+        twist = true;
+        //console.log("aide");
+    }
+    //debugger
+
+    /*if(twist == true){
+        console.log("yes")
+    }*/
+
+    /*if(twist == false){
+        console.log("no")
+    }*/
+
+    if(twist == false && chapter === "traitre"){
+        //let none = document.querySelector(".opt");
+        //debugger
+        //let none = document.querySelector(".opt");
+        //none.classList.add("none");
+        //debugger
+        try{
+            let none = document.querySelector(".big1");
+            none.classList.add = "none";
+        }
+        //let none = document.querySelector(".1");
+        catch{
+            let none = document.querySelector(".big1");
+            none.classList.add = "none";
+        }
+        //none.classList.add = "none";
+        //none.className("none");
+        //console.log("lose")
+        //console.log("win")
+    }
+
     };
 
 
+    /*if(chapter === "debut" && twist == true){
+        twist = false;
+        //console.log("restart");
+        /*let logo = document.querySelector("#logo");
+        logo.classList.add("none");*/
+    /*}
+
+    if (chapter === "aide"){
+        twist = true;
+        //console.log("aide");
+    }
+    //debugger
+
+    /*if(twist == true){
+        console.log("yes")
+    }*/
+
+    /*if(twist == false){
+        console.log("no")
+    }*/
+
+    //if(twist == false && chapter === "traitre"){
+        //let none = document.querySelector(".opt");
+        //nouveauBtn.className("none");
+        //none.className("none");
+        //console.log("lose")
+        //console.log("win")
+    //}
+
+
+    /*let twist = false;
+
+    if(chapter === "debut" && twist == true){
+        twist = false;
+        console.log("allo");
+        /*let logo = document.querySelector("#logo");
+        logo.classList.add("none");*/
+    /*}
+
+    if (chapter === "aide"){
+        twist = true;
+        console.log("aide");
+    }
+    //debugger
+
+    if(twist == true){
+        console.log("yes")
+    }
+
+    if(twist == false){
+        console.log("no")
+    }
+
+    if(twist == true && chapter === "traitre"){
+        console.log("yes")
+    }*/
+
+    /*if(twist == false && chapter === "traitre"){
+        let none = document.querySelector("button");
+        none.classList.add("none");
+        //chapters[traitre].boutons[1].removeAttribute("style", "display: none");
+    }*/
     /*if (chapters[chapter].boutons.length == 1){
         bouton2Remplace.setAttribute("style", "display: none");
         bouton3Remplace.setAttribute("style", "display: none");
@@ -247,6 +356,35 @@ function goToChapter(chapter) {
         console.log("Cette clé de chapitre n'existe pas.")
     }*/
 }
+
+
+    /*if(chapter === "debut" && twist == true){
+        twist = false;
+        //console.log("restart");
+        /*let logo = document.querySelector("#logo");
+        logo.classList.add("none");*/
+    /*}
+
+    if (chapter === "aide"){
+        twist = true;
+        //console.log("aide");
+    }*/
+    //debugger
+
+    /*if(twist == true){
+        console.log("yes")
+    }*/
+
+    /*if(twist == false){
+        console.log("no")
+    }*/
+
+    /*if(twist == false && chapter === "traitre"){
+        let none = document.querySelector(".opt");
+        none.className("none");
+        //console.log("lose")
+        //console.log("win")
+    }*/
 }
 
 goToChapter("debut");

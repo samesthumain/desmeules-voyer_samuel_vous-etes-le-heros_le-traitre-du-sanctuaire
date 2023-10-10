@@ -62,8 +62,8 @@ body{
     overflow: hidden;
 }
 
-.debut{
-    background-image: url(/assets/images/sanctuaire.jfif);
+.none/*:nth-of-type(2)*/{
+    display: none;
 }
 
 #option{
