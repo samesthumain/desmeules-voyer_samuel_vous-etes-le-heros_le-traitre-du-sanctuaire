@@ -178,6 +178,8 @@ function goToChapter(chapter) {
     let descriptionRemplace = document.querySelector("#para");
     let imageRemplace = document.querySelector("#image");
     let bouton1Remplace = document.querySelector("#button1");
+    let bouton2Remplace = document.querySelector("#button2");
+    let bouton3Remplace = document.querySelector("#button3");
     //post dom
     titreRemplace.textContent = chapters[chapter].titre;
     //let nouveauTitre = document.createTextNode(chapters[chapter].titre);
@@ -190,9 +192,23 @@ function goToChapter(chapter) {
     //debugger
     bouton1Remplace.textContent = chapters[chapter].boutons[0].titre;
 
-    if (chapters[chapter].boutons[1]){
-        
+
+    if (chapters[chapter].boutons.length == 1){
+        bouton2Remplace.setAttribute("style", "display: none");
+        bouton3Remplace.setAttribute("style", "display: none");
     }
+
+    if (chapters[chapter].boutons.length == 2){
+        bouton3Remplace.setAttribute("style", "display: none");
+    }
+
+    /*if (chapters[chapter].boutons.length = 10){
+        bouton2Remplace.textContent = chapters[chapter].boutons[1].titre;
+    }
+
+    else{
+        bouton2Remplace.setAttribute("style", "display: none");
+    }*/
         //console.log("Titre: ", chapters[chapter].titre);
         //jeu.replaceChild(nouveauTitre, titreRemplace);
         //console.log("description: ", chapters[chapter].description);
