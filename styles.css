@@ -62,9 +62,9 @@ body{
     overflow: hidden;
 }
 
-.none/*:nth-of-type(2)*/{
+/*.none:nth-of-type(2){
     display: none;
-}
+}*/
 
 #option{
     height:30%; 
