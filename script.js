@@ -2,7 +2,7 @@ const chapters = {
     debut : {
         titre: "Arrivée au sanctuaire",
         description: "Javier, membre de l'ordre des chevalier de bronze qui se battent au service du sanctuaire d'Athéna à l'aide de l'énergie divine de la Déesse, a recu une lettre provenant dudis sanctuaire lui informant qu'il y a un traitre chez les chevaliers et que son influence se répend à travers le sanctuaire. Il décide donc de rentrer pour offrir son aide.",
-        image:"/assets/images/sanctuaire.jfif",
+        image:"./assets/images/sanctuaire.jfif",
         boutons: [
             {titre: 'Allons-y!', destination: 'ambuscade'}
         ]
@@ -175,9 +175,9 @@ function goToChapter(chapter) {
     if(chapters.hasOwnProperty(chapter)){
     //pre dom
     //let jeu = document.querySelector("#jeu");
-    let titreRemplace = document.querySelector("#chapitre");
-    let descriptionRemplace = document.querySelector("#para");
-    let imageRemplace = document.querySelector("#image");
+    const titreRemplace = document.querySelector("#chapitre");
+    const descriptionRemplace = document.querySelector("#para");
+    const imageRemplace = document.querySelector("#image");
     /*let bouton1Remplace = document.querySelector("#button1");
     let bouton2Remplace = document.querySelector("#button2");
     let bouton3Remplace = document.querySelector("#button3");*/
@@ -207,7 +207,7 @@ function goToChapter(chapter) {
     // on crée un nouveau bouton 
     const nouveauBtn = document.createElement('button');
     nouveauBtn.classList.add(`opt`);
-    //nouveauBtn.classList.add(`big${i}`);
+    nouveauBtn.classList.add(`big${i}`);
     //debugger
     // on applique un libellé au bouton 
     nouveauBtn.textContent = chapters[chapter].boutons[i].titre; 
@@ -219,6 +219,15 @@ function goToChapter(chapter) {
     });
     // enfin, on ajoute le bouton dans la page Web (dans le DOM) 
     boutons.appendChild(nouveauBtn); 
+
+    
+
+    };
+
+    const none = document.querySelector(".opt.big1");
+    //none.classList.add = "none";
+    //debugger
+    
 
     if(chapter === "debut" && twist == true){
         twist = false;
@@ -240,29 +249,36 @@ function goToChapter(chapter) {
     /*if(twist == false){
         console.log("no")
     }*/
-
-    if(twist == false && chapter === "traitre"){
+    //debugger
+    if(chapter === "traitre" && twist == false){
+        //const none = opt.children[1];
         //let none = document.querySelector(".opt");
         //debugger
         //let none = document.querySelector(".opt");
         //none.classList.add("none");
         //debugger
-        try{
-            let none = document.querySelector(".big1");
-            none.classList.add = "none";
-        }
+        //try{
+            //boutons.removeChild(opt[1]);
+            //none.remove();
+            //debugger
+            //opt.className= "none, opt";
+        //}
         //let none = document.querySelector(".1");
-        catch{
-            let none = document.querySelector(".big1");
-            none.classList.add = "none";
-        }
+        //catch{
+            //let none = document.querySelector(".big1");
+            none.setAttribute("style", "display: none");
+            //.classList.add = "none";
+            //debugger
+        //}
         //none.classList.add = "none";
         //none.className("none");
         //console.log("lose")
         //console.log("win")
     }
-
-    };
+    
+    /*else{
+        none.className = "opt";
+    }*/
 
 
     /*if(chapter === "debut" && twist == true){
@@ -388,3 +404,4 @@ function goToChapter(chapter) {
 }
 
 goToChapter("debut");
+//goToChapter("traitre");
