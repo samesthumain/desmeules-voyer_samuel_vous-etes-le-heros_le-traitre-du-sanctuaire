@@ -5,6 +5,7 @@
 
 * {
     margin: 0%;
+    padding: 0%;
 }
 
 body {
@@ -55,7 +56,7 @@ body {
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
-    background-size: 90%, 100%;
+    /*background-size: 90%, 100%;*/
     overflow: hidden;
 }
 
@@ -106,4 +107,9 @@ body {
     transition-duration: .35s;
     border: 1px solid #000;
     color: #000;
+}
+
+.debut{
+    height: 1px;
+    width: 1px;
 }

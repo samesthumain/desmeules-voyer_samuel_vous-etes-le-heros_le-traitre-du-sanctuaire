@@ -212,8 +212,7 @@ function goToChapter(chapter) {
 
         titreRemplace.textContent = chapters[chapter].titre;
         descriptionRemplace.textContent = chapters[chapter].description;
-        imageRemplace.innerHTML = `<img src="${chapters[chapter].image}">`;
-
+        imageRemplace.innerHTML = `<img src="${chapters[chapter].image}" class="${chapters[chapter]}">`;
         // Sélectionne le div .boutons 
         const boutons = document.querySelector('#option');
         // Supprime tous les boutons enfants du div .boutons 
