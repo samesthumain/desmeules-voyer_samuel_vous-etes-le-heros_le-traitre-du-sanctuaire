@@ -14,13 +14,13 @@ const chapters = {
         description: "Dès son arrivée au sanctuaire, Javier est attaqué par un autre chevalier. Celui-ci semble porter un bouclier, comment Javier compte-t-il riposter?",
         image: "./assets/images/ambuscade.jpeg",
         boutons: [{
-                titre: 'Un coup puissant, direct',
-                destination: 'bloque'
-            },
-            {
-                titre: 'Une rafale de coups rapides',
-                destination: 'rafale'
-            }
+            titre: 'Un coup puissant, direct',
+            destination: 'bloque'
+        },
+        {
+            titre: 'Une rafale de coups rapides',
+            destination: 'rafale'
+        }
         ]
     },
 
@@ -48,7 +48,7 @@ const chapters = {
 
     rencontre: {
         titre: "Rencontre agitée",
-        description: "Alors qu'il continue d'avancer dans le sanctuaire, se demandant comment il pourrait trouver le reste du «Nous» qu'a mentioné le chevalier qu'il a battu, au loin, Javier vois un autre chevalier de bronze fuire un chevalier d'or, le plus haut rang possible pour un chevalier, il est même plus fort la garde raprochée d'Athéna.",
+        description: "Alors qu'il continue d'avancer dans le sanctuaire, se demandant comment il pourrait trouver le reste du «Nous» qu'a mentioné le chevalier qu'il a battu, au loin, Javier vois un autre chevalier de bronze fuire un chevalier d'or, le plus haut rang possible pour un chevalier, il est même plus fort la garde rapprochée d'Athéna.",
         image: "./assets/images/rencontre.jpeg",
         boutons: [{
             titre: '«Que ce passe-t-il?»',
@@ -61,17 +61,17 @@ const chapters = {
         description: "Le chevalier de bronze supplie Javier de l'aider puisque seul, il ne peut rien contre un chevalier d'or, que fait Javier, devrait-il le croire?",
         image: "./assets/images/or.jpg",
         boutons: [{
-                titre: 'Attaquer le chevalier de bronze',
-                destination: 'attaquer'
-            },
-            {
-                titre: "Attaquer le chevalier d'or",
-                destination: 'aide'
-            },
-            {
-                titre: 'Ne pas prendre de décision hâtive',
-                destination: 'attendre'
-            }
+            titre: 'Attaquer le chevalier de bronze',
+            destination: 'attaquer'
+        },
+        {
+            titre: "Attaquer le chevalier d'or",
+            destination: 'aide'
+        },
+        {
+            titre: 'Ne pas prendre de décision hâtive',
+            destination: 'attendre'
+        }
         ]
     },
 
@@ -102,13 +102,13 @@ const chapters = {
         description: "«T'es un peu lent, toi.» Dis le chevalier d'or en s'aprochant. Javier n'as plus le temps d'hésiter le chevalier d'or n'est clairement pas de son côté mais que peut-il faire contre le plus puissant chevalier du sanctuaire?",
         image: "./assets/images/riposte.jpg",
         boutons: [{
-                titre: 'Un coup puissant, direct',
-                destination: 'directe'
-            },
-            {
-                titre: 'Une rafale de coups rapides',
-                destination: 'desespere'
-            }
+            titre: 'Un coup puissant, direct',
+            destination: 'directe'
+        },
+        {
+            titre: 'Une rafale de coups rapides',
+            destination: 'desespere'
+        }
         ]
     },
 
@@ -125,10 +125,10 @@ const chapters = {
 
     directe: {
         titre: "Précis",
-        description: "Prennant avantage du fait que le chevalier d'or ne le prends clairement pas au sérieux, Javier se jette dans la gueule du loup à la vitesse de l'éclair et frappe le chevalier d'or dans le ventre de toutes ses forces. Le chevalier d'or est déstabilisé, ce qui laisse assez de temps à Javier pour porter un coup dévastateur à la gorge de son adversaire, le mettant hors d'état de nuire. <br> «Tu as battu mon chevalier d'or à toi tous seul, impressionant...»",
+        description: "Prennant avantage du fait que le chevalier d'or ne le prends clairement pas au sérieux, Javier se jette dans la gueule du loup à la vitesse de l'éclair et frappe le chevalier d'or dans le ventre de toutes ses forces. Le chevalier d'or est déstabilisé, ce qui laisse assez de temps à Javier pour porter un coup dévastateur à la gorge de son adversaire, le mettant hors d'état de nuire. «Tu as battu mon chevalier d'or à toi tous seul, impressionant...»",
         image: "./assets/images/directe.jpg",
         boutons: [{
-            titre: '«Qui vas là?»',
+            titre: '«Qui va là?»',
             destination: 'meurtre'
         }]
     },
@@ -136,10 +136,10 @@ const chapters = {
     //route avec allié
     aide: {
         titre: "Deux contre un",
-        description: "Ensemble, Javier et l'autre chevalier de bronze qui se présente sous le nom de Lancelot combattent le chevalier d'or et, ensemble, ils arrivent à défaire leur puissant ennemi. Lancelot explique ensuite la raison pour laquelle le chevalier d'or le chassait: il a découvert l'identité du traitre original et que le chevalier d'or avait rejoint sa cause. <br> «Dis donc, tu est drôlement bien renseigné, toi...»",
+        description: "Ensemble, Javier et l'autre chevalier de bronze qui se présente sous le nom de Lancelot combattent le chevalier d'or et, ensemble, ils arrivent à défaire leur puissant ennemi. Lancelot explique ensuite la raison pour laquelle le chevalier d'or le chassait: il a découvert l'identité du traitre original et que le chevalier d'or avait rejoint sa cause. «Dis donc, tu est drôlement bien renseigné, toi...»",
         image: "./assets/images/aide.jpg",
         boutons: [{
-            titre: '«Qui vas là?»',
+            titre: '«Qui va là?»',
             destination: 'meurtre'
         }]
     },
@@ -160,13 +160,13 @@ const chapters = {
         description: "La garde raprochée d'Athéna, les hommes et femmes en qui Athéna à entièrement confience. Des anciens chevaliers qui sont suposés de n'avoir qu'une chose en commun: une loyauté sans faille envers la Déesse. Finalement, l'homme le plus proche de la déesse sera celui qui causera sa perte.",
         image: "./assets/images/traitre.jpg",
         boutons: [{
-                titre: "C'est fini...",
-                destination: 'mort'
-            },
-            {
-                titre: '«Non!»',
-                destination: 'twist'
-            }
+            titre: "C'est fini...",
+            destination: 'mort'
+        },
+        {
+            titre: '«Non!»',
+            destination: 'twist'
+        }
         ]
     },
 
@@ -212,7 +212,7 @@ function goToChapter(chapter) {
 
         titreRemplace.textContent = chapters[chapter].titre;
         descriptionRemplace.textContent = chapters[chapter].description;
-        imageRemplace.innerHTML = `<img src="${chapters[chapter].image}" class="${chapters[chapter]}">`;
+        imageRemplace.innerHTML = `<img src="${chapters[chapter].image}" class="${chapter}">`;
         // Sélectionne le div .boutons 
         const boutons = document.querySelector('#option');
         // Supprime tous les boutons enfants du div .boutons 
