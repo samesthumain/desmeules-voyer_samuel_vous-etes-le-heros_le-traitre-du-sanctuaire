@@ -38,7 +38,7 @@ const chapters = {
     rafale: {
         titre: "Un traitre en moins",
         description: "Le bouclier de son ennemi ne peut rien contre la rafale de coups de poing rapides. Le chevalier finit par tomber sous le poids des coups sans arrèt de Javier, marmonant «La Déesse tombera! Nous allons...» avant de tomber sans connaissance.",
-        image: "./assets/images/rafale.gif",
+        //image: "./assets/images/rafale.gif",
         video: "./assets/videos/rafale.mp4",
         boutons: [{
             titre: "Continuer d'avancer dans le sanctuaire",
@@ -185,7 +185,7 @@ const chapters = {
     twist: {
         titre: "NON",
         description: "«Non! Ça ne peut pas finir comme ça, je dois pouvoir faire quelque chose.» C'est alors que Javier comprends qu'avant de mourir, il dois donner toute son énergie divine à Lancelot. Ensemble, ils ont réussit à battre le chevalier d'or, peut-être que Lancelot pourras faire de même avec le traître s'il a accès à leurs puissance combinée!",
-        image: "./assets/images/twist.gif",
+        //image: "./assets/images/twist.gif",
         video: "./assets/video/twist.mp4",
         boutons: [{
             titre: '«Lancelot, vas-y!!!»',
@@ -258,16 +258,20 @@ function goToChapter(chapter) {
             none.setAttribute("style", "display: none");
         }
 
-        if (chapter.hasOwnProperty(chapter.video)){
+        if (chapters[chapter].video){
             //debugger
-            imageRemplace.innerHTML = `<video src="${chapters[chapter].video}" class="${chapter}"></video>`;
+            imageRemplace.innerHTML = `<video src="${chapters[chapter].video}" class="${chapter}" autoplay loop></video>`;
         }else{
             //debugger
             imageRemplace.innerHTML = `<img src="${chapters[chapter].image}" class="${chapter}">`;
         }
 
-        const killerQueen = document.querySelector("audio");
-        killerQueen.currentTime = 0;
+        //const killerQueen = document.querySelector("audio");
+
+        /*if (killerQueen.ended()){
+            killerQueen.currentTime = 0;
+        }*/
+        
 
         /*if (chapter.hasOwnProperty(image)){
             debugger
@@ -275,6 +279,13 @@ function goToChapter(chapter) {
         }else{
             imageRemplace.innerHTML = `<video src="${chapters[chapter].video}" class="${chapter}"></video>`;
         }*/
+
+        const button = document.querySelector(".opt");
+
+button.addEventListener("click", function() {
+    const killerQueen = document.querySelector("audio");
+    killerQueen.play();
+})
     }
 }
 
@@ -282,9 +293,11 @@ goToChapter("debut");
 
 const button = document.querySelector(".opt");
 
-/*button.addEventListener("click", function() {
-    <audio src="audio.mp3"></audio>
-})*/
+button.addEventListener("click", function() {
+    const killerQueen = document.querySelector("audio");
+    killerQueen.currentTime = 0;
+    killerQueen.play();
+})
 
 
 
