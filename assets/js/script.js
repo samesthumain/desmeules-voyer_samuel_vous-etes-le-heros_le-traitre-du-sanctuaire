@@ -39,6 +39,7 @@ const chapters = {
         titre: "Un traitre en moins",
         description: "Le bouclier de son ennemi ne peut rien contre la rafale de coups de poing rapides. Le chevalier finit par tomber sous le poids des coups sans arrèt de Javier, marmonant «La Déesse tombera! Nous allons...» avant de tomber sans connaissance.",
         image: "./assets/images/rafale.gif",
+        video: "./assets/videos/rafale.mp4",
         boutons: [{
             titre: "Continuer d'avancer dans le sanctuaire",
             destination: 'rencontre'
@@ -185,6 +186,7 @@ const chapters = {
         titre: "NON",
         description: "«Non! Ça ne peut pas finir comme ça, je dois pouvoir faire quelque chose.» C'est alors que Javier comprends qu'avant de mourir, il dois donner toute son énergie divine à Lancelot. Ensemble, ils ont réussit à battre le chevalier d'or, peut-être que Lancelot pourras faire de même avec le traître s'il a accès à leurs puissance combinée!",
         image: "./assets/images/twist.gif",
+        video: "./assets/video/twist.mp4",
         boutons: [{
             titre: '«Lancelot, vas-y!!!»',
             destination: 'fin'
@@ -210,9 +212,11 @@ function goToChapter(chapter) {
         const descriptionRemplace = document.querySelector("#para");
         const imageRemplace = document.querySelector("#image");
 
+        //const videoRemplace = document.querySelector/
+
         titreRemplace.textContent = chapters[chapter].titre;
         descriptionRemplace.textContent = chapters[chapter].description;
-        imageRemplace.innerHTML = `<img src="${chapters[chapter].image}" class="${chapter}">`;
+        //imageRemplace.innerHTML = `<img src="${chapters[chapter].image}" class="${chapter}">`;
         // Sélectionne le div .boutons 
         const boutons = document.querySelector('#option');
         // Supprime tous les boutons enfants du div .boutons 
@@ -237,7 +241,10 @@ function goToChapter(chapter) {
             boutons.appendChild(nouveauBtn);
         };
 
+        
         const none = document.querySelector(".opt.big1");
+
+        
 
         if (chapter === "debut" && twist == true) {
             twist = false;
@@ -250,7 +257,36 @@ function goToChapter(chapter) {
         if (chapter === "traitre" && twist == false) {
             none.setAttribute("style", "display: none");
         }
+
+        if (chapter.hasOwnProperty(chapter.video)){
+            //debugger
+            imageRemplace.innerHTML = `<video src="${chapters[chapter].video}" class="${chapter}"></video>`;
+        }else{
+            //debugger
+            imageRemplace.innerHTML = `<img src="${chapters[chapter].image}" class="${chapter}">`;
+        }
+
+        const killerQueen = document.querySelector("audio");
+        killerQueen.currentTime = 0;
+
+        /*if (chapter.hasOwnProperty(image)){
+            debugger
+            imageRemplace.innerHTML = `<img src="${chapters[chapter].image}" class="${chapter}">`;
+        }else{
+            imageRemplace.innerHTML = `<video src="${chapters[chapter].video}" class="${chapter}"></video>`;
+        }*/
     }
 }
 
 goToChapter("debut");
+
+const button = document.querySelector(".opt");
+
+/*button.addEventListener("click", function() {
+    <audio src="audio.mp3"></audio>
+})*/
+
+
+
+//Lien son bouton: https://www.myinstants.com/en/instant/killer-queen-detonate-30740/?utm_source=copy&utm_medium=share
+// nvm we chillin' i got the mp3
