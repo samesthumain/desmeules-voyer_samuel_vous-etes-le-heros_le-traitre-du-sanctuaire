@@ -492,4 +492,4 @@ function goToChapter(chapter) {
 
 goToChapter("debut");
 
-//enlever l'image favicon de seiya
+//enlever l'image favicon de seiya stp
