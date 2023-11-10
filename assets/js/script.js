@@ -45,6 +45,7 @@ const chapters = {
         //[enlever image]
         video: "./assets/videos/rafale.mp4",
         son: "./assets/sons/saint_seiya_ost_1.mp3",
+        //sonSup: "./assets/sons/rozan_sho_ryu_ha.mp3",
         boutons: [{
             titre: "Continuer d'avancer dans le sanctuaire",
             destination: 'rencontre'
@@ -230,8 +231,7 @@ function goToChapter(chapter) {
         const titreRemplace = document.querySelector("#chapitre");
         const descriptionRemplace = document.querySelector("#para");
         const imageRemplace = document.querySelector("#image");
-
-        //const sonRemplace = document.querySelector("#son");
+        //const soundEffect = document.querySelector("#sunSup");
 
         titreRemplace.textContent = chapters[chapter].titre;
         descriptionRemplace.textContent = chapters[chapter].description;
@@ -295,6 +295,7 @@ function goToChapter(chapter) {
 
         if (chapter === "rafale") {
             let sonActuel = document.querySelector(`#${chapter}-son`);
+            //let sonSup = document.querySelector()
             setTimeout(function () {
                 sonActuel.currentTime = 859;
                 sonActuel.play();
@@ -467,6 +468,14 @@ function goToChapter(chapter) {
             imageRemplace.innerHTML = `<img src="${chapters[chapter].image}" class="${chapter}">`;
         }
 
+       /* if (chapters[chapter].sonSup) {
+            //debugger
+            imageRemplace.innerHTML = `<video src="${chapters[chapter].video}" class="${chapter}" autoplay loop></video>`;
+        } else {
+            //debugger
+            imageRemplace.innerHTML = `<img src="${chapters[chapter].image}" class="${chapter}">`;
+        }*/
+
         //const killerQueen = document.querySelector("audio");
 
         /*if (killerQueen.ended()){
@@ -487,9 +496,13 @@ function goToChapter(chapter) {
             const killerQueen = document.querySelector("audio");
             killerQueen.play();
         })*/
+
+        
     }
 }
 
 goToChapter("debut");
 
 //enlever l'image favicon de seiya stp
+
+//spawn.theRock()
