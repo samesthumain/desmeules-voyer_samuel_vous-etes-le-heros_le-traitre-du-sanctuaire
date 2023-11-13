@@ -326,7 +326,7 @@ function goToChapter(chapter) {
         //ost 2: https://www.youtube.com/watch?v=yVb-yUlkszs
         //ost 3: https://www.youtube.com/watch?v=b_RRG2BuRn0&t=732s
 
-
+        //ce bouton disparaîtras si la twist n'est pas activée
         const none = document.querySelector(".opt.big1");
 
 
@@ -345,32 +345,16 @@ function goToChapter(chapter) {
             none.setAttribute("style", "display: none");
         }
 
-        //code de twist expérimental
-        /*if (chapter === "debut" && twist == "true") {
-            console.log("startOver");
-            localStorage.setItem("twist", false);
-        }
-
-        if (chapter === "aide") {
-            //console.log("twistTrue");
-            localStorage.setItem("twist", true);
-            /*if (twist == "true"){
-                console.log("ifConfirmation");
-            }
-        }
-
-        if (chapter === "traitre" && twist == false) {
-            none.setAttribute("style", "display: none");
-        }*/
 
 
-        // créer la video
+        // créer la video si elle existe, sinon, créer une image
         if (chapters[chapter].video) {
             imageRemplace.innerHTML = `<video src="${chapters[chapter].video}" class="${chapter}" autoplay loop></video>`;
         } else {
             imageRemplace.innerHTML = `<img src="${chapters[chapter].image}" class="${chapter}">`;
         }
 
+        //créer un son suplémentaire si'il est présent dans l'objet
         /* if (chapters[chapter].sonSup) {
              //debugger
              imageRemplace.innerHTML = `<video src="${chapters[chapter].video}" class="${chapter}" autoplay loop></video>`;
@@ -379,30 +363,8 @@ function goToChapter(chapter) {
              imageRemplace.innerHTML = `<img src="${chapters[chapter].image}" class="${chapter}">`;
          }*/
 
-        //const killerQueen = document.querySelector("audio");
-
-        /*if (killerQueen.ended()){
-            killerQueen.currentTime = 0;
-        }*/
-
-
-        /*if (chapter.hasOwnProperty(image)){
-            debugger
-            imageRemplace.innerHTML = `<img src="${chapters[chapter].image}" class="${chapter}">`;
-        }else{
-            imageRemplace.innerHTML = `<video src="${chapters[chapter].video}" class="${chapter}"></video>`;
-        }*/
-
-        /*button.addEventListener("click", function () {
-            const killerQueen = document.querySelector("audio");
-            killerQueen.play();
-        })*/
-
-        /*if (localStorage.getItem("currentChapter")){
-            debugger
-            goToChapter(`localStorage.getItem("currentChapter")`);
-        }*/
-        console.log(localStorage.getItem("twist"));
+        //verif_twist (au besoin)
+        //console.log(localStorage.getItem("twist"));
 
     }
 }
@@ -421,3 +383,41 @@ if (localStorage.getItem("currentChapter")) {
 } else {
     goToChapter("debut");
 }
+
+//code de twist expérimental
+/*if (chapter === "debut" && twist == "true") {
+    console.log("startOver");
+    localStorage.setItem("twist", false);
+}
+
+if (chapter === "aide") {
+    //console.log("twistTrue");
+    localStorage.setItem("twist", true);
+    /*if (twist == "true"){
+        console.log("ifConfirmation");
+    }
+}
+
+if (chapter === "traitre" && twist == false) {
+    none.setAttribute("style", "display: none");
+}*/
+
+//code killer queen
+//const killerQueen = document.querySelector("audio");
+
+/*if (killerQueen.ended()){
+    killerQueen.currentTime = 0;
+}*/
+
+/*button.addEventListener("click", function () {
+    const killerQueen = document.querySelector("audio");
+    killerQueen.play();
+})*/
+
+//code vérif d'image (au besoin)
+/*if (chapter.hasOwnProperty(image)){
+    debugger
+    imageRemplace.innerHTML = `<img src="${chapters[chapter].image}" class="${chapter}">`;
+}else{
+    imageRemplace.innerHTML = `<video src="${chapters[chapter].video}" class="${chapter}"></video>`;
+}*/
