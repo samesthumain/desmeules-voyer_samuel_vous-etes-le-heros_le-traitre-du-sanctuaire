@@ -53,7 +53,7 @@ const chapters = {
         son: "./assets/sons/saint_seiya_ost_1.mp3",
         sonStart: 859,
         sonDuree: 2500,
-        //sonSup: "./assets/sons/rozan_sho_ryu_ha.mp3",
+        //sonSup: "./assets/sons/blood_splatter.mp3",
         boutons: [{
             titre: "Continuer d'avancer dans le sanctuaire",
             destination: 'rencontre'
@@ -261,9 +261,10 @@ const chapters = {
 };
 
 //mettre la twist dans le storage
-localStorage.setItem("twist", "false")
+localStorage.setItem("twist", false);
+//let twist = localStorage.getItem("twist");
 
-let twist = false;
+//let twist = false;
 
 function goToChapter(chapter) {
     if (chapters.hasOwnProperty(chapter)) {
@@ -330,18 +331,40 @@ function goToChapter(chapter) {
 
 
         //modification et vérification de la twist
-        if (chapter === "debut" && twist == true) {
-            twist = false;
+        let twist = localStorage.getItem("twist");
+
+        if (chapter === "debut" && twist == "true") {
+            localStorage.setItem("twist", "false");
         }
 
         if (chapter === "aide") {
-            twist = true;
+            localStorage.setItem("twist", "true");
+        }
+
+        if (chapter === "traitre" && twist == "false") {
+            none.setAttribute("style", "display: none");
+        }
+
+        //code de twist expérimental
+        /*if (chapter === "debut" && twist == "true") {
+            console.log("startOver");
+            localStorage.setItem("twist", false);
+        }
+
+        if (chapter === "aide") {
+            //console.log("twistTrue");
+            localStorage.setItem("twist", true);
+            /*if (twist == "true"){
+                console.log("ifConfirmation");
+            }
         }
 
         if (chapter === "traitre" && twist == false) {
             none.setAttribute("style", "display: none");
-        }
+        }*/
 
+
+        // créer la video
         if (chapters[chapter].video) {
             imageRemplace.innerHTML = `<video src="${chapters[chapter].video}" class="${chapter}" autoplay loop></video>`;
         } else {
@@ -379,7 +402,7 @@ function goToChapter(chapter) {
             debugger
             goToChapter(`localStorage.getItem("currentChapter")`);
         }*/
-
+        console.log(localStorage.getItem("twist"));
 
     }
 }
@@ -389,6 +412,7 @@ const reset = document.querySelector("#buttonReset");
 reset.addEventListener("click", function () {
     //console.log("reset")
     localStorage.removeItem("currentChapter");
+    goToChapter("debut");
     //localStorage.clear;
 })
 
