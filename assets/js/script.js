@@ -260,6 +260,9 @@ const chapters = {
     }
 };
 
+//mettre la twist dans le storage
+localStorage.setItem("twist", "false")
+
 let twist = false;
 
 function goToChapter(chapter) {
@@ -291,8 +294,7 @@ function goToChapter(chapter) {
             nouveauBtn.addEventListener('click', () => {
                 // la destination, c'est la destination du bouton! 
                 goToChapter(chapters[chapter].boutons[i].destination)
-
-                //sauvegarde du chapitre
+                // sauvegarde du chapitre
                 localStorage.setItem("currentChapter", `${chapters[chapter].boutons[i].destination}`);
             });
             // enfin, on ajoute le bouton dans la page Web (dans le DOM) 
@@ -327,7 +329,7 @@ function goToChapter(chapter) {
         const none = document.querySelector(".opt.big1");
 
 
-
+        //modification et vérification de la twist
         if (chapter === "debut" && twist == true) {
             twist = false;
         }
@@ -382,35 +384,16 @@ function goToChapter(chapter) {
     }
 }
 
-//nouveau départ
-if (localStorage.getItem("currentChapter")){
-    goToChapter(`localStorage.getItem("currentChapter")`);
+const reset = document.querySelector("#buttonReset");
+
+reset.addEventListener("click", function () {
+    //console.log("reset")
+    localStorage.removeItem("currentChapter");
+    //localStorage.clear;
+})
+
+if (localStorage.getItem("currentChapter")) {
+    goToChapter(`${localStorage.getItem("currentChapter")}`);
 } else {
     goToChapter("debut");
 }
-
-
-//goToChapter("debut");
-
-const reset = document.querySelector("#buttonReset");
-
-reset.addEventListener("click", function(){
-    localStorage.clear;
-})
-
-
-
-//callback
-/*function callbackSauvegarde(chapitreActuel){
-    localStorage.setItem("currentChapter", `${chapitreActuel}`);
-
-                if (localStorage.getItem("currentChapter")){
-                    console.log(localStorage.getItem("currentChapter"));
-                    //debugger
-                }
-}*/
-
-
-
-
-//enlever l'image favicon de seiya stp
