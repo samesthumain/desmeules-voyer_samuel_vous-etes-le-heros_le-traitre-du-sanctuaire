@@ -373,23 +373,24 @@ function goToChapter(chapter) {
             killerQueen.play();
         })*/
 
-        if (localStorage.getItem("currentChapter")){
-            goToChapter(`${chapter}`);
-        }
+        /*if (localStorage.getItem("currentChapter")){
+            debugger
+            goToChapter(`localStorage.getItem("currentChapter")`);
+        }*/
 
 
     }
 }
 
 //nouveau départ
-/*if (localStorage.getItem("currentChapter")){
-    goToChapter(`${chapter}`);
+if (localStorage.getItem("currentChapter")){
+    goToChapter(`localStorage.getItem("currentChapter")`);
 } else {
     goToChapter("debut");
-}*/
+}
 
 
-goToChapter("debut");
+//goToChapter("debut");
 
 const reset = document.querySelector("#buttonReset");
 
