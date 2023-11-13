@@ -267,7 +267,7 @@ function goToChapter(chapter) {
         const titreRemplace = document.querySelector("#chapitre");
         const descriptionRemplace = document.querySelector("#para");
         const imageRemplace = document.querySelector("#image");
-        
+
 
         titreRemplace.textContent = chapters[chapter].titre;
         descriptionRemplace.textContent = chapters[chapter].description;
@@ -284,6 +284,7 @@ function goToChapter(chapter) {
             const nouveauBtn = document.createElement('button');
             nouveauBtn.classList.add(`opt`);
             nouveauBtn.classList.add(`big${i}`);
+            nouveauBtn.classList.add(`storage`);
             // on applique un libellé au bouton 
             nouveauBtn.textContent = chapters[chapter].boutons[i].titre;
             // on appele goToChapter lorsqu'on clique le bouton 
@@ -322,7 +323,7 @@ function goToChapter(chapter) {
         //ost 1: https://www.youtube.com/watch?v=47b3mWohtGY
         //ost 2: https://www.youtube.com/watch?v=yVb-yUlkszs
         //ost 3: https://www.youtube.com/watch?v=b_RRG2BuRn0&t=732s
-        
+
 
         const none = document.querySelector(".opt.big1");
 
@@ -348,13 +349,13 @@ function goToChapter(chapter) {
             imageRemplace.innerHTML = `<img src="${chapters[chapter].image}" class="${chapter}">`;
         }
 
-       /* if (chapters[chapter].sonSup) {
-            //debugger
-            imageRemplace.innerHTML = `<video src="${chapters[chapter].video}" class="${chapter}" autoplay loop></video>`;
-        } else {
-            //debugger
-            imageRemplace.innerHTML = `<img src="${chapters[chapter].image}" class="${chapter}">`;
-        }*/
+        /* if (chapters[chapter].sonSup) {
+             //debugger
+             imageRemplace.innerHTML = `<video src="${chapters[chapter].video}" class="${chapter}" autoplay loop></video>`;
+         } else {
+             //debugger
+             imageRemplace.innerHTML = `<img src="${chapters[chapter].image}" class="${chapter}">`;
+         }*/
 
         //const killerQueen = document.querySelector("audio");
 
@@ -378,10 +379,22 @@ function goToChapter(chapter) {
         })*/
 
 
+
     }
 }
 
 goToChapter("debut");
+
+
+const boutonsStorage = document.querySelectorAll(".storage");
+
+boutonsStorage.forEach(bouton => {
+    bouton.addEventListener("click", function () {
+        //localStorage.setItem("currentChapter", `${chapter}`)
+    })
+});
+
+
 
 //enlever l'image favicon de seiya stp
 
