@@ -291,10 +291,9 @@ function goToChapter(chapter) {
             nouveauBtn.addEventListener('click', () => {
                 // la destination, c'est la destination du bouton! 
                 goToChapter(chapters[chapter].boutons[i].destination)
-                //activer le son qui joue à chaque changement de page
-                //const killerQueen = document.querySelector("audio");
-                //killerQueen.currentTime = 0;
-                //killerQueen.play();
+
+                //sauvegarde du chapitre
+                localStorage.setItem("currentChapter", `${chapters[chapter].boutons[i].destination}`);
             });
             // enfin, on ajoute le bouton dans la page Web (dans le DOM) 
             boutons.appendChild(nouveauBtn);
@@ -342,10 +341,8 @@ function goToChapter(chapter) {
         }
 
         if (chapters[chapter].video) {
-            //debugger
             imageRemplace.innerHTML = `<video src="${chapters[chapter].video}" class="${chapter}" autoplay loop></video>`;
         } else {
-            //debugger
             imageRemplace.innerHTML = `<img src="${chapters[chapter].image}" class="${chapter}">`;
         }
 
@@ -371,31 +368,48 @@ function goToChapter(chapter) {
             imageRemplace.innerHTML = `<video src="${chapters[chapter].video}" class="${chapter}"></video>`;
         }*/
 
-        //const button = document.querySelectorAll(".opt");
-
         /*button.addEventListener("click", function () {
             const killerQueen = document.querySelector("audio");
             killerQueen.play();
         })*/
 
+        if (localStorage.getItem("currentChapter")){
+            goToChapter(`${chapter}`);
+        }
 
 
     }
 }
 
+//nouveau départ
+/*if (localStorage.getItem("currentChapter")){
+    goToChapter(`${chapter}`);
+} else {
+    goToChapter("debut");
+}*/
+
+
 goToChapter("debut");
 
+const reset = document.querySelector("#buttonReset");
 
-const boutonsStorage = document.querySelectorAll(".storage");
+reset.addEventListener("click", function(){
+    localStorage.clear;
+})
 
-boutonsStorage.forEach(bouton => {
-    bouton.addEventListener("click", function () {
-        //localStorage.setItem("currentChapter", `${chapter}`)
-    })
-});
+
+
+//callback
+/*function callbackSauvegarde(chapitreActuel){
+    localStorage.setItem("currentChapter", `${chapitreActuel}`);
+
+                if (localStorage.getItem("currentChapter")){
+                    console.log(localStorage.getItem("currentChapter"));
+                    //debugger
+                }
+}*/
+
 
 
 
 //enlever l'image favicon de seiya stp
-
-//spawn.theRock()
