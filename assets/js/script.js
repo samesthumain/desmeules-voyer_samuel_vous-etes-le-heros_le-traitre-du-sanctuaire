@@ -47,13 +47,11 @@ const chapters = {
     rafale: {
         titre: "Un traitre en moins",
         description: "Le bouclier de son ennemi ne peut rien contre la rafale de coups de poing rapides. Le chevalier finit par tomber sous le poids des coups sans arrèt de Javier, marmonant «La Déesse tombera! Nous allons...» avant de tomber sans connaissance.",
-        //image: "./assets/images/rafale.gif",
-        //[enlever image]
         video: "./assets/videos/rafale.mp4",
         son: "./assets/sons/saint_seiya_ost_1.mp3",
         sonStart: 859,
         sonDuree: 2500,
-        //sonSup: "./assets/sons/blood_splatter.mp3",
+        sonSup: "./assets/sons/blood_splatter.mp3",
         boutons: [{
             titre: "Continuer d'avancer dans le sanctuaire",
             destination: 'rencontre'
@@ -163,7 +161,7 @@ const chapters = {
         son: "./assets/sons/saint_seiya_ost_2.mp3",
         sonStart: 569,
         sonDuree: 3000,
-        //sonSup: "./assets/sons/rozan_sho_ryu_ha.mp3",
+        sonSup: "./assets/sons/rozan_sho_ryu_ha.mp3",
         boutons: [{
             titre: '«Qui va là?»',
             destination: 'meurtre'
@@ -192,7 +190,7 @@ const chapters = {
         son: "./assets/sons/saint_seiya_ost_3.mp3",
         sonStart: 1310,
         sonDuree: 1800,
-        //sonSup: "./assets/sons/rozan_sho_ryu_ha.mp3",
+        sonSup: "./assets/sons/blood_splatter.mp3",
         boutons: [{
             titre: '«Comment est-ce possible?»',
             destination: 'traitre'
@@ -234,8 +232,6 @@ const chapters = {
     twist: {
         titre: "NON",
         description: "«Non! Ça ne peut pas finir comme ça, je dois pouvoir faire quelque chose.» C'est alors que Javier comprends qu'avant de mourir, il dois donner toute son énergie divine à Lancelot. Ensemble, ils ont réussit à battre le chevalier d'or, peut-être que Lancelot pourras faire de même avec le traître s'il a accès à leurs puissance combinée!",
-        //image: "./assets/images/twist.gif",
-        //[enlever image]
         video: "./assets/videos/twist.mp4",
         son: "./assets/sons/saint_seiya_ost_3.mp3",
         sonStart: 1092,
@@ -262,9 +258,6 @@ const chapters = {
 
 //mettre la twist dans le storage
 localStorage.setItem("twist", false);
-//let twist = localStorage.getItem("twist");
-
-//let twist = false;
 
 function goToChapter(chapter) {
     if (chapters.hasOwnProperty(chapter)) {
@@ -272,10 +265,8 @@ function goToChapter(chapter) {
         const descriptionRemplace = document.querySelector("#para");
         const imageRemplace = document.querySelector("#image");
 
-
         titreRemplace.textContent = chapters[chapter].titre;
         descriptionRemplace.textContent = chapters[chapter].description;
-        //sonRemplace.innerHTML = `<audio src=${chapters[chapter].son}></audio>`;
         // Sélectionne le div .boutons 
         const boutons = document.querySelector('#option');
         // Supprime tous les boutons enfants du div .boutons 
@@ -309,10 +300,7 @@ function goToChapter(chapter) {
         sonRemplace.innerHTML = '';
         sonRemplace.appendChild(monAudio);
 
-        //const soundEffect = document.querySelector("#sunSup");
-        //soundEffect.innerHTML = `<audio src="${chapters[chapter].sonSup}" id="${chapter}-sonSup"></audio>`;
-
-
+        //`<audio src="${chapters[chapter].sonSup}" id="${chapter}-sonSup"></audio>`;
 
         monAudio.currentTime = chapters[chapter].sonStart;
         monAudio.play();
@@ -345,8 +333,6 @@ function goToChapter(chapter) {
             none.setAttribute("style", "display: none");
         }
 
-
-
         // créer la video si elle existe, sinon, créer une image
         if (chapters[chapter].video) {
             imageRemplace.innerHTML = `<video src="${chapters[chapter].video}" class="${chapter}" autoplay loop></video>`;
@@ -354,24 +340,27 @@ function goToChapter(chapter) {
             imageRemplace.innerHTML = `<img src="${chapters[chapter].image}" class="${chapter}">`;
         }
 
-        //créer un son suplémentaire si'il est présent dans l'objet
-        /* if (chapters[chapter].sonSup) {
-             //debugger
-             imageRemplace.innerHTML = `<video src="${chapters[chapter].video}" class="${chapter}" autoplay loop></video>`;
-         } else {
-             //debugger
-             imageRemplace.innerHTML = `<img src="${chapters[chapter].image}" class="${chapter}">`;
-         }*/
+        //créer un son suplémentaire s'il est présent dans l'objet
+        if (chapters[chapter].sonSup) {
+            const soundEffect = document.querySelector("#sunSup");
+            soundEffect.innerHTML = document.createElement('audio');
+        }
 
         //verif_twist (au besoin)
         //console.log(localStorage.getItem("twist"));
-
     }
 }
 
-const reset = document.querySelector("#buttonReset");
 
-reset.addEventListener("click", function () {
+//bouton reset
+const divReset = document.querySelector("#buttonReset");
+const boutonReset = document.createElement('button');
+boutonReset.classList.add(`opt`);
+boutonReset.textContent = "Réinitialiser";
+divReset.appendChild(boutonReset);
+//const reset = document.querySelector("#buttonReset");
+
+boutonReset.addEventListener("click", function () {
     //console.log("reset")
     localStorage.removeItem("currentChapter");
     goToChapter("debut");
