@@ -342,12 +342,14 @@ function goToChapter(chapter) {
 
         //créer un son suplémentaire s'il est présent dans l'objet
         if (chapters[chapter].sonSup) {
-            const soundEffect = document.querySelector("#sunSup");
-            soundEffect.innerHTML = document.createElement('audio');
+            const soundEffect = document.createElement('audio');
+            soundEffect.src = chapters[chapter].sonSup;
+            sonRemplace.appendChild(soundEffect);
+            soundEffect.play();
         }
 
         //verif_twist (au besoin)
-        //console.log(localStorage.getItem("twist"));
+        console.log(localStorage.getItem("currentChapter"));
     }
 }
 
@@ -410,3 +412,4 @@ if (chapter === "traitre" && twist == false) {
 }else{
     imageRemplace.innerHTML = `<video src="${chapters[chapter].video}" class="${chapter}"></video>`;
 }*/
+
