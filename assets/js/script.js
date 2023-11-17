@@ -50,8 +50,10 @@ const chapters = {
         video: "./assets/videos/rafale.mp4",
         son: "./assets/sons/saint_seiya_ost_1.mp3",
         sonStart: 859,
-        sonDuree: 2500,
+        sonDuree: 116000,
         sonSup: "./assets/sons/blood_splatter.mp3",
+        sonSupStart: 0,
+        sonSupDuree: 3000,
         boutons: [{
             titre: "Continuer d'avancer dans le sanctuaire",
             destination: 'rencontre'
@@ -160,8 +162,10 @@ const chapters = {
         image: "./assets/images/directe.jpg",
         son: "./assets/sons/saint_seiya_ost_2.mp3",
         sonStart: 569,
-        sonDuree: 3000,
+        sonDuree: 61000,
         sonSup: "./assets/sons/rozan_sho_ryu_ha.mp3",
+        sonSupStart: 9,
+        sonSupDuree: 3000,
         boutons: [{
             titre: '«Qui va là?»',
             destination: 'meurtre'
@@ -189,8 +193,10 @@ const chapters = {
         image: "./assets/images/meurtre.jpeg",
         son: "./assets/sons/saint_seiya_ost_3.mp3",
         sonStart: 1310,
-        sonDuree: 1800,
+        sonDuree: 19000,
         sonSup: "./assets/sons/blood_splatter.mp3",
+        sonSupStart: 0,
+        sonSupDuree: 3000,
         boutons: [{
             titre: '«Comment est-ce possible?»',
             destination: 'traitre'
@@ -235,7 +241,10 @@ const chapters = {
         video: "./assets/videos/twist.mp4",
         son: "./assets/sons/saint_seiya_ost_3.mp3",
         sonStart: 1092,
-        sonDuree: 3000,
+        sonDuree: 49000,
+        sonSup: "./assets/sons/rozan_sho_ryu_ha.mp3",
+        sonSupStart: 5,
+        sonSupDuree: 2750,
         boutons: [{
             titre: '«Lancelot, vas-y!!!»',
             destination: 'fin'
@@ -257,14 +266,13 @@ const chapters = {
 };
 
 //mettre la twist dans le storage
-localStorage.setItem("twist", false);
+localStorage.setItem("twist", "false");
 
 function goToChapter(chapter) {
     if (chapters.hasOwnProperty(chapter)) {
         const titreRemplace = document.querySelector("#chapitre");
         const descriptionRemplace = document.querySelector("#para");
         const imageRemplace = document.querySelector("#image");
-
         titreRemplace.textContent = chapters[chapter].titre;
         descriptionRemplace.textContent = chapters[chapter].description;
         // Sélectionne le div .boutons 
@@ -300,23 +308,14 @@ function goToChapter(chapter) {
         sonRemplace.innerHTML = '';
         sonRemplace.appendChild(monAudio);
 
-        //`<audio src="${chapters[chapter].sonSup}" id="${chapter}-sonSup"></audio>`;
-
         monAudio.currentTime = chapters[chapter].sonStart;
         monAudio.play();
         setTimeout(function () {
             monAudio.pause();
         }, chapters[chapter].sonDuree);
 
-
-        //si y'a de quoi à changer dans les sons:
-        //ost 1: https://www.youtube.com/watch?v=47b3mWohtGY
-        //ost 2: https://www.youtube.com/watch?v=yVb-yUlkszs
-        //ost 3: https://www.youtube.com/watch?v=b_RRG2BuRn0&t=732s
-
         //ce bouton disparaîtras si la twist n'est pas activée
         const none = document.querySelector(".opt.big1");
-
 
         //modification et vérification de la twist
         let twist = localStorage.getItem("twist");
@@ -345,14 +344,15 @@ function goToChapter(chapter) {
             const soundEffect = document.createElement('audio');
             soundEffect.src = chapters[chapter].sonSup;
             sonRemplace.appendChild(soundEffect);
+            soundEffect.currentTime = chapters[chapter].sonSupStart;
             soundEffect.play();
-        }
+            setTimeout(function () {
+                soundEffect.pause();
+            }, chapters[chapter].sonSupDuree);
 
-        //verif_twist (au besoin)
-        console.log(localStorage.getItem("currentChapter"));
+        }
     }
 }
-
 
 //bouton reset
 const divReset = document.querySelector("#buttonReset");
@@ -360,13 +360,11 @@ const boutonReset = document.createElement('button');
 boutonReset.classList.add(`opt`);
 boutonReset.textContent = "Réinitialiser";
 divReset.appendChild(boutonReset);
-//const reset = document.querySelector("#buttonReset");
 
 boutonReset.addEventListener("click", function () {
-    //console.log("reset")
-    localStorage.removeItem("currentChapter");
+    localStorage.clear();
+    localStorage.setItem("twist", "false");
     goToChapter("debut");
-    //localStorage.clear;
 })
 
 if (localStorage.getItem("currentChapter")) {
@@ -375,41 +373,7 @@ if (localStorage.getItem("currentChapter")) {
     goToChapter("debut");
 }
 
-//code de twist expérimental
-/*if (chapter === "debut" && twist == "true") {
-    console.log("startOver");
-    localStorage.setItem("twist", false);
-}
-
-if (chapter === "aide") {
-    //console.log("twistTrue");
-    localStorage.setItem("twist", true);
-    /*if (twist == "true"){
-        console.log("ifConfirmation");
-    }
-}
-
-if (chapter === "traitre" && twist == false) {
-    none.setAttribute("style", "display: none");
-}*/
-
-//code killer queen
-//const killerQueen = document.querySelector("audio");
-
-/*if (killerQueen.ended()){
-    killerQueen.currentTime = 0;
-}*/
-
-/*button.addEventListener("click", function () {
-    const killerQueen = document.querySelector("audio");
-    killerQueen.play();
-})*/
-
-//code vérif d'image (au besoin)
-/*if (chapter.hasOwnProperty(image)){
-    debugger
-    imageRemplace.innerHTML = `<img src="${chapters[chapter].image}" class="${chapter}">`;
-}else{
-    imageRemplace.innerHTML = `<video src="${chapters[chapter].video}" class="${chapter}"></video>`;
-}*/
-
+//si y'a de quoi à changer dans les sons:
+//ost 1: https://www.youtube.com/watch?v=47b3mWohtGY
+//ost 2: https://www.youtube.com/watch?v=yVb-yUlkszs
+//ost 3: https://www.youtube.com/watch?v=b_RRG2BuRn0&t=732s
