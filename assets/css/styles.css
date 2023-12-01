@@ -10,7 +10,8 @@
 
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     height: 100vh;
     width: 100vw;
@@ -140,4 +141,16 @@ body {
     transition-duration: .35s;
     border: 1px solid #000;
     color: #000;
+}
+
+.mute{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    align-self: flex-end;
+    right: 2%;
+    bottom: 2%;
+    font-size: 1vw;
 }
