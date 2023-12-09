@@ -320,7 +320,8 @@ function goToChapter(chapter) {
             monAudio.volume = 1;
         } else {
             monAudio.volume = 0;
-            checkMute.checked = true;
+            //checkMute.check;
+            //checkMute.checked = true;
         }
 
         checkMute.addEventListener("click", function () {
