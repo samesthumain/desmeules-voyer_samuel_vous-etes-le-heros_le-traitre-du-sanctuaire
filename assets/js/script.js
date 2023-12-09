@@ -20,13 +20,13 @@ const chapters = {
         sonStart: 288,
         sonDuree: 3000,
         boutons: [{
-                titre: 'Un coup puissant, direct',
-                destination: 'bloque'
-            },
-            {
-                titre: 'Une rafale de coups rapides',
-                destination: 'rafale'
-            }
+            titre: 'Un coup puissant, direct',
+            destination: 'bloque'
+        },
+        {
+            titre: 'Une rafale de coups rapides',
+            destination: 'rafale'
+        }
         ]
     },
 
@@ -82,17 +82,17 @@ const chapters = {
         sonStart: 288,
         sonDuree: 3000,
         boutons: [{
-                titre: 'Attaquer le chevalier de bronze',
-                destination: 'attaquer'
-            },
-            {
-                titre: "Attaquer le chevalier d'or",
-                destination: 'aide'
-            },
-            {
-                titre: 'Ne pas prendre de décision hâtive',
-                destination: 'attendre'
-            }
+            titre: 'Attaquer le chevalier de bronze',
+            destination: 'attaquer'
+        },
+        {
+            titre: "Attaquer le chevalier d'or",
+            destination: 'aide'
+        },
+        {
+            titre: 'Ne pas prendre de décision hâtive',
+            destination: 'attendre'
+        }
         ]
     },
 
@@ -132,13 +132,13 @@ const chapters = {
         sonStart: 1749,
         sonDuree: 3000,
         boutons: [{
-                titre: 'Un coup puissant, direct',
-                destination: 'directe'
-            },
-            {
-                titre: 'Une rafale de coups rapides',
-                destination: 'desespere'
-            }
+            titre: 'Un coup puissant, direct',
+            destination: 'directe'
+        },
+        {
+            titre: 'Une rafale de coups rapides',
+            destination: 'desespere'
+        }
         ]
     },
 
@@ -211,13 +211,13 @@ const chapters = {
         sonStart: 1767,
         sonDuree: 2900,
         boutons: [{
-                titre: "C'est fini...",
-                destination: 'mort'
-            },
-            {
-                titre: '«Non!»',
-                destination: 'twist'
-            }
+            titre: "C'est fini...",
+            destination: 'mort'
+        },
+        {
+            titre: '«Non!»',
+            destination: 'twist'
+        }
         ]
     },
 
@@ -267,8 +267,11 @@ const chapters = {
 
 //mettre la twist dans le storage
 localStorage.setItem("twist", "false");
-localStorage.setItem('mute', 'false');
+let canPlay = localStorage.setItem("canPlay", "true");
+//localStorage.setItem('mute', 'false');
 const checkMute = document.querySelector('#checkMute');
+
+
 
 function goToChapter(chapter) {
     if (chapters.hasOwnProperty(chapter)) {
@@ -312,6 +315,24 @@ function goToChapter(chapter) {
 
         monAudio.currentTime = chapters[chapter].sonStart;
         monAudio.play();
+
+        if (canPlay){
+            monAudio.volume = 1;
+        } else {
+            monAudio.volume = 0;
+            checkMute.checked = true;
+        }
+
+        checkMute.addEventListener("click", function () {
+            if (checkMute.checked) {
+                monAudio.volume = 0;
+                canPlay = false;
+            } else {
+                monAudio.volume = 1;
+                canPlay = true;
+            }
+        })
+
         setTimeout(function () {
             monAudio.pause();
         }, chapters[chapter].sonDuree);
@@ -349,9 +370,19 @@ function goToChapter(chapter) {
             soundEffect.currentTime = chapters[chapter].sonSupStart;
             soundEffect.play();
 
-            if (checkMute.checked === true) {
-                soundEffect.volume = 0
+            if (canPlay){
+                soundEffect.volume = 1;
+            } else {
+                soundEffect.volume = 0;
             }
+
+            checkMute.addEventListener("click", function () {
+                if (checkMute.checked) {
+                    soundEffect.volume = 0;
+                } else {
+                    soundEffect.volume = 1;
+                }
+            })
 
             setTimeout(function () {
                 soundEffect.pause();
@@ -374,10 +405,22 @@ boutonReset.addEventListener("click", function () {
     goToChapter("debut");
 })
 
+/*checkMute.addEventListener("click", function(){
+    if (checkMute.checked) {
+        const jeu = document.querySelector("#jeu");
+        const son = document.querySelector("#son");
+        jeu.removeChild(son);
+        //son.volume = 0
+    }else{
+        const jeu = document.querySelector("#jeu");
+        const son = jeu.appendChild("div");
+    }
 
-if (checkMute.checked === true) {
-
-}
+})*/
+/*else{
+    const son = document.querySelector("#son");
+    console.log(son.volume)
+}*/
 
 if (localStorage.getItem("currentChapter")) {
     goToChapter(`${localStorage.getItem("currentChapter")}`);
