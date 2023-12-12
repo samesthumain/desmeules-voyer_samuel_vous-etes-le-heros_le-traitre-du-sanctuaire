@@ -155,7 +155,7 @@ body {
     font-size: 1vw;
 }
 
-@media screen and (width: 320px) {
+@media screen and (max-width: 320px) {
 
     body {
         display: flex;
