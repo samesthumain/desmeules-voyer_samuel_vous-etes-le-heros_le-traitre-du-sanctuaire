@@ -267,8 +267,7 @@ const chapters = {
 
 //mettre la twist dans le storage
 localStorage.setItem("twist", "false");
-let canPlay = localStorage.setItem("canPlay", "true");
-//localStorage.setItem('mute', 'false');
+localStorage.setItem("canPlay", "true");
 const checkMute = document.querySelector('#checkMute');
 
 
@@ -316,21 +315,22 @@ function goToChapter(chapter) {
         monAudio.currentTime = chapters[chapter].sonStart;
         monAudio.play();
 
-        if (canPlay){
+        if (localStorage.getItem("canPlay") == "true") {
             monAudio.volume = 1;
-        } else {
+        } else if (localStorage.getItem("canPlay") == "false") {
             monAudio.volume = 0;
-            //checkMute.check;
-            //checkMute.checked = true;
         }
 
         checkMute.addEventListener("click", function () {
-            if (checkMute.checked) {
+            console.log(localStorage.getItem("canPlay"));
+            if (localStorage.getItem("canPlay") == "true") {
                 monAudio.volume = 0;
-                canPlay = false;
-            } else {
+                
+                localStorage.setItem("canPlay", "false");
+            } else if (localStorage.getItem("canPlay") == "false") {
                 monAudio.volume = 1;
-                canPlay = true;
+
+                localStorage.setItem("canPlay", "true");
             }
         })
 
@@ -371,16 +371,16 @@ function goToChapter(chapter) {
             soundEffect.currentTime = chapters[chapter].sonSupStart;
             soundEffect.play();
 
-            if (canPlay){
+            if (localStorage.getItem("canPlay") == "true") {
                 soundEffect.volume = 1;
-            } else {
+            } else if (localStorage.getItem("canPlay") == "false") {
                 soundEffect.volume = 0;
             }
 
             checkMute.addEventListener("click", function () {
-                if (checkMute.checked) {
+                if ((localStorage.getItem("canPlay") == "true")) {
                     soundEffect.volume = 0;
-                } else {
+                } else if ((localStorage.getItem("canPlay") == "false")) {
                     soundEffect.volume = 1;
                 }
             })
@@ -401,27 +401,10 @@ boutonReset.textContent = "Réinitialiser";
 divReset.appendChild(boutonReset);
 
 boutonReset.addEventListener("click", function () {
-    localStorage.clear();
+    localStorage.setItem("currentChapter", "debut")
     localStorage.setItem("twist", "false");
     goToChapter("debut");
 })
-
-/*checkMute.addEventListener("click", function(){
-    if (checkMute.checked) {
-        const jeu = document.querySelector("#jeu");
-        const son = document.querySelector("#son");
-        jeu.removeChild(son);
-        //son.volume = 0
-    }else{
-        const jeu = document.querySelector("#jeu");
-        const son = jeu.appendChild("div");
-    }
-
-})*/
-/*else{
-    const son = document.querySelector("#son");
-    console.log(son.volume)
-}*/
 
 if (localStorage.getItem("currentChapter")) {
     goToChapter(`${localStorage.getItem("currentChapter")}`);
