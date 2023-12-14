@@ -265,7 +265,7 @@ const chapters = {
     }
 };
 
-//mettre la twist dans le storage
+//mettre la twist et le mute dans le storage
 localStorage.setItem("twist", "false");
 localStorage.setItem("canPlay", "true");
 const checkMute = document.querySelector('#checkMute');
@@ -325,7 +325,7 @@ function goToChapter(chapter) {
             console.log(localStorage.getItem("canPlay"));
             if (localStorage.getItem("canPlay") == "true") {
                 monAudio.volume = 0;
-                
+
                 localStorage.setItem("canPlay", "false");
             } else if (localStorage.getItem("canPlay") == "false") {
                 monAudio.volume = 1;
