@@ -217,7 +217,7 @@ body {
     }
 
     #option {
-        height: 40%;
+        height: 50%;
         width: 100%;
         display: flex;
         justify-content: space-around;
@@ -512,20 +512,6 @@ body {
         right: 5%;
         bottom: 2%;
         font-size: 80%;
-    }
-
-}
-
-@media screen and (max-height: 500px) {
-
-    #image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 60%;
-        width: 60%;
-        background-repeat: no-repeat;
-        overflow: hidden;
     }
 
 }
